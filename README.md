@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task Manager Application
 
-## Getting Started
+A modern, intuitive task management application built with Next.js, React, and Tailwind CSS. This application helps users organize their daily tasks with features like priority management, sorting, and real-time search capabilities.
 
-First, run the development server:
+## Features
 
-```bash
+- ✨ Clean and modern UI with smooth animations
+- 📱 Fully responsive design
+- ✅ Create, complete, and delete tasks
+- 🏷️ Priority levels (Low, Medium, High)
+- 🔍 Real-time search functionality
+- 📊 Multiple sorting options (Date, Priority, Completion)
+- 💾 Persistent storage using localStorage
+- 🎨 Visual feedback with hover and active states
+- 🎯 Priority-based color coding
+
+## Setup and Installation
+
+1. Clone the repository:
+
+git clone [repository-url]
+cd task-manager
+
+2. Install dependencies:
+
+npm install
+
+# or
+
+yarn install
+
+3. Start the development server:
+
 npm run dev
+
 # or
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**: React framework for production
+- **React**: Frontend library
+- **Framer Motion**: Animation library
+- **Tailwind CSS**: Utility-first CSS framework
+- **Lucide Icons**: Modern icon library
+- **LocalStorage**: For persistent data storage
 
-## Learn More
+## Key Components
 
-To learn more about Next.js, take a look at the following resources:
+1. **Task Input**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Add new tasks with priority levels
+   - Form validation to prevent empty tasks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Task List**
 
-## Deploy on Vercel
+   - Animated task cards
+   - Priority indicators
+   - Complete/incomplete status
+   - Delete functionality
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Search and Sort**
+   - Real-time search filtering
+   - Multiple sorting options
+   - Responsive filter controls
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development Assumptions
+
+1. **Data Persistence**
+
+   - Uses browser's localStorage for data persistence
+   - No backend database required
+   - Data is stored per browser/device
+
+2. **User Experience**
+
+   - Single user application
+   - No authentication required
+   - All tasks are stored locally
+
+3. **Browser Support**
+
+   - Modern browsers (Chrome, Firefox, Safari, Edge)
+   - Requires JavaScript enabled
+   - LocalStorage API support
+
+4. **Performance**
+   - Optimized for lists up to 1000 tasks
+   - Real-time search and sort operations
+   - Smooth animations for better UX
+
+## Future Enhancements
+
+- Task categories/tags
+- Due dates and reminders
+- Dark mode support
+- Task notes/descriptions
+- Multi-user support
+- Cloud synchronization
+- Export/import functionality
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
